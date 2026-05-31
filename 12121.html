@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>AI 工具导航</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="精选全球 AI 工具，持续更新，专注效率与创造" />
+
+<style>
+:root {
+  --bg: #0b0d14;
+  --card: #161922;
+  --border: #2a2d3c;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #6366f1;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 28px 20px;
+  text-align: center;
+  background: #0d0f17;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.ad-top {
+  background: #1c1f2e;
+  color: var(--muted);
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+}
+
+.main {
+  flex: 1;
+}
+
+.sidebar {
+  width: 240px;
+}
+
+.category {
+  margin-bottom: 32px;
+}
+
+.category h2 {
+  font-size: 16px;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  border-left: 4px solid var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+}
+
+.card a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.ad-box {
+  background: #1c1f2e;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: 13px;
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="ad-top">
+  🔥 顶部广告位｜支持 Google AdSense / 自定义推广
+</div>
+
+<header>
+  <h1>🧠 AI 工具导航</h1>
+  <p>精选 · 高效 · 持续更新</p>
+</header>
+
+<div class="container">
+
+<main class="main">
+
+  <section class="category">
+    <h2>大模型 / 对话</h2>
+    <div class="grid">
+      <div class="card"><a href="https://chat.openai.com" target="_blank">ChatGPT</a><p>最强通用对话模型</p></div>
+      <div class="card"><a href="https://claude.ai" target="_blank">Claude</a><p>长文本理解专家</p></div>
+      <div class="card"><a href="https://gemini.google.com" target="_blank">Gemini</a><p>多模态 AI</p></div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>AI 绘画 / 设计</h2>
+    <div class="grid">
+      <div class="card"><a href="https://midjourney.com" target="_blank">Midjourney</a><p>高质量图像生成</p></div>
+      <div class="card"><a href="https://leonardo.ai" target="_blank">Leonardo</a><p>游戏 & 插画神器</p></div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>编程 / 开发</h2>
+    <div class="grid">
+      <div class="card"><a href="https://cursor.sh" target="_blank">Cursor</a><p>AI 编程编辑器</p></div>
+      <div class="card"><a href="https://v0.dev" target="_blank">v0.dev</a><p>AI 生成前端 UI</p></div>
+    </div>
+  </section>
+
+  <section class="category">
+    <h2>效率 / 办公</h2>
+    <div class="grid">
+      <div class="card"><a href="https://notion.so" target="_blank">Notion AI</a><p>文档 + AI</p></div>
+      <div class="card"><a href="https://gamma.app" target="_blank">Gamma</a><p>AI PPT 生成</p></div>
+    </div>
+  </section>
+
+</main>
+
+<aside class="sidebar">
+  <div class="ad-box">
+    📢 侧边广告位<br/>
+    可放推荐工具 / 联盟计划
+  </div>
+  <div class="ad-box">
+    💡 推广位<br/>
+    比如你的付费项目
+  </div>
+</aside>
+
+</div>
+
+<footer>
+  © 2026 AI 工具导航 · 深色调 · 静态部署版
+</footer>
+
+</body>
+</html>
